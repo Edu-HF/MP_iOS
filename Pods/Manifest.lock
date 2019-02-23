@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.8.1)
+  - CDAlertView (0.9.1)
+  - Gloss (2.1.0)
+  - KeychainSwift (13.0.0)
+  - Nuke (7.5.2)
+  - SkeletonView (1.4.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - CDAlertView
+  - Gloss
+  - KeychainSwift
+  - Nuke
+  - SkeletonView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CDAlertView
+    - Gloss
+    - KeychainSwift
+    - Nuke
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  CDAlertView: 89450acbd8d882868f2fc4ec6d2b6f128710c779
+  Gloss: 13ab6b4b0ff4cb2448466edc957479b1bccea8ba
+  KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
+  Nuke: 0350d346a688426e8f2331253ef28dc2fc4f6178
+  SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
+
+PODFILE CHECKSUM: 2dd4570b09ff5f749bdf35d77f21ba5c5397d454
+
+COCOAPODS: 1.6.0

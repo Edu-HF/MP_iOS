@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CatCell" id="vVT-vz-vVs" customClass="CatCollectionViewCell" customModule="MP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSn-UK-AfQ">
+                        <rect key="frame" x="8" y="8" width="90" height="104"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otn-LV-du6">
+                                <rect key="frame" x="8" y="96" width="75" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vUJ-jy-Wjq">
+                                <rect key="frame" x="20" y="8" width="50" height="50"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16101157665252686" green="0.16441798210144043" blue="0.18431639671325684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Otn-LV-du6" secondAttribute="bottom" constant="8" id="6kb-Pv-LPM"/>
+                            <constraint firstItem="Otn-LV-du6" firstAttribute="leading" secondItem="LSn-UK-AfQ" secondAttribute="leading" constant="8" id="6vd-mk-7rI"/>
+                            <constraint firstAttribute="bottom" secondItem="vUJ-jy-Wjq" secondAttribute="bottom" constant="46" id="ChH-u0-ok5"/>
+                            <constraint firstItem="vUJ-jy-Wjq" firstAttribute="leading" secondItem="LSn-UK-AfQ" secondAttribute="leading" constant="20" id="Edx-qr-Fus"/>
+                            <constraint firstItem="vUJ-jy-Wjq" firstAttribute="top" secondItem="LSn-UK-AfQ" secondAttribute="top" constant="8" id="brg-hg-9Nd"/>
+                            <constraint firstAttribute="trailing" secondItem="vUJ-jy-Wjq" secondAttribute="trailing" constant="20" id="dxy-v8-Cys"/>
+                            <constraint firstAttribute="trailing" secondItem="Otn-LV-du6" secondAttribute="trailing" constant="7" id="tGH-lm-fTd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.11764705882352941" green="0.12549019607843137" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="LSn-UK-AfQ" firstAttribute="top" secondItem="vVT-vz-vVs" secondAttribute="top" constant="8" id="3D0-Qi-M3i"/>
+                <constraint firstItem="LSn-UK-AfQ" firstAttribute="leading" secondItem="vVT-vz-vVs" secondAttribute="leading" constant="8" id="IVN-zz-veh"/>
+                <constraint firstAttribute="bottom" secondItem="LSn-UK-AfQ" secondAttribute="bottom" constant="8" id="Yte-jF-B51"/>
+                <constraint firstAttribute="trailing" secondItem="LSn-UK-AfQ" secondAttribute="trailing" constant="8" id="gBu-Ca-TfO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="QER-Mw-WMe"/>
+            <size key="customSize" width="107" height="121"/>
+            <connections>
+                <outlet property="cellCatIV" destination="vUJ-jy-Wjq" id="VSp-zf-TpB"/>
+                <outlet property="cellCatName" destination="Otn-LV-du6" id="eSP-mL-7vk"/>
+            </connections>
+            <point key="canvasLocation" x="-149.59999999999999" y="7.6461769115442282"/>
+        </collectionViewCell>
+    </objects>
+</document>
